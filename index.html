@@ -28,7 +28,7 @@
                     <img src="assets/heart.png" alt="" class="w-[25px]">
                 </div>
                 <div class="flex items-center gap-2 bg-[#cbebef59] px-5 py-3 rounded-3xl">
-                    <span class="text-[1rem] text-black font-bold">100</span>
+                    <span class="text-[1rem] text-black font-bold" id="coins">100</span>
                     <img src="assets/coin.png" alt="" class="w-[25px]">
                 </div>
                 <div>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="mt-8 flex justify-between">
                         <button class="btn w-[48%] rounded-lg copys"><i class="fa-solid fa-copy"></i>  Copy</button>
-                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg calls"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="mt-8 flex justify-between">
                         <button class="btn w-[48%] rounded-lg copys"><i class="fa-solid fa-copy"></i>  Copy</button>
-                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg calls"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     </div>
                     <div class="mt-8 flex justify-between">
                         <button class="btn w-[48%] rounded-lg copys"><i class="fa-solid fa-copy"></i>  Copy</button>
-                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg calls"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="mt-8 flex justify-between">
                         <button class="btn w-[48%] rounded-lg copys"><i class="fa-solid fa-copy"></i>  Copy</button>
-                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg calls"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                     </div>
                     <div class="mt-8 flex justify-between">
                         <button class="btn w-[48%] rounded-lg copys"><i class="fa-solid fa-copy"></i>  Copy</button>
-                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg calls"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="mt-8 flex justify-between">
                         <button class="btn w-[48%] rounded-lg copys"><i class="fa-solid fa-copy"></i>  Copy</button>
-                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg calls"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
                     </div>
                     <div class="mt-8 flex justify-between">
                         <button class="btn w-[48%] rounded-lg copys"><i class="fa-solid fa-copy"></i>  Copy</button>
-                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg calls"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                     </div>
                     <div class="mt-8 flex justify-between">
                         <button class="btn w-[48%] rounded-lg copys"><i class="fa-solid fa-copy"></i>  Copy</button>
-                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg calls"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                     </div>
                 </div>
@@ -273,14 +273,22 @@
                     </div>
                     <div class="mt-8 flex justify-between">
                         <button class="btn w-[48%] rounded-lg copys"><i class="fa-solid fa-copy"></i>  Copy</button>
-                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg"><i class="fa-solid fa-phone"></i>  Call</button>
+                        <button class="btn w-[48%] bg-[#00a63e] text-white rounded-lg calls"><i class="fa-solid fa-phone"></i>  Call</button>
                     </div>
                     </div>
                 </div>
             </section>
             <!-- history container -->
-             <aside class="bg-white col-span-3 rounded-lg">
-                
+             <aside class="bg-white col-span-3 rounded-lg p-5">
+                <div>
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-[1.25rem] text-[#111111] font-medium"><i class="fa-regular fa-clock"></i> Call History</h2>
+                        <button class="btn bg-[#00A63E] text-[1rem] font-semibold text-white py-6 px-8 rounded-3xl"><span id="copy-btn">Clear</button>
+                    </div>
+                    <div id="history-container">
+
+                    </div>
+                </div>
              </aside>
          </section>
     </main>
