@@ -64,3 +64,8 @@ newId('card-container').addEventListener('click', function (e) {
     container.appendChild(createDiv)
   }
 })
+
+newId('Clear-btn').addEventListener('click', function() {
+    const container = newId('history-container');
+    container.innerHTML = ''
+})
